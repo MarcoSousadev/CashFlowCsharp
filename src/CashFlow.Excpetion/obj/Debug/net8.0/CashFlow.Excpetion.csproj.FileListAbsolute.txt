@@ -1,0 +1,11 @@
+C:\Users\Marco\Projetos\dotNet\CashFlow\src\CashFlow.Excpetion\bin\Debug\net8.0\CashFlow.Excpetion.deps.json
+C:\Users\Marco\Projetos\dotNet\CashFlow\src\CashFlow.Excpetion\bin\Debug\net8.0\CashFlow.Excpetion.dll
+C:\Users\Marco\Projetos\dotNet\CashFlow\src\CashFlow.Excpetion\bin\Debug\net8.0\CashFlow.Excpetion.pdb
+C:\Users\Marco\Projetos\dotNet\CashFlow\src\CashFlow.Excpetion\obj\Debug\net8.0\CashFlow.Excpetion.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Marco\Projetos\dotNet\CashFlow\src\CashFlow.Excpetion\obj\Debug\net8.0\CashFlow.Excpetion.AssemblyInfoInputs.cache
+C:\Users\Marco\Projetos\dotNet\CashFlow\src\CashFlow.Excpetion\obj\Debug\net8.0\CashFlow.Excpetion.AssemblyInfo.cs
+C:\Users\Marco\Projetos\dotNet\CashFlow\src\CashFlow.Excpetion\obj\Debug\net8.0\CashFlow.Excpetion.csproj.CoreCompileInputs.cache
+C:\Users\Marco\Projetos\dotNet\CashFlow\src\CashFlow.Excpetion\obj\Debug\net8.0\CashFlow.Excpetion.dll
+C:\Users\Marco\Projetos\dotNet\CashFlow\src\CashFlow.Excpetion\obj\Debug\net8.0\refint\CashFlow.Excpetion.dll
+C:\Users\Marco\Projetos\dotNet\CashFlow\src\CashFlow.Excpetion\obj\Debug\net8.0\CashFlow.Excpetion.pdb
+C:\Users\Marco\Projetos\dotNet\CashFlow\src\CashFlow.Excpetion\obj\Debug\net8.0\ref\CashFlow.Excpetion.dll
