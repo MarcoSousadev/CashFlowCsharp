@@ -47,6 +47,17 @@
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
+        },
+        "resources": {
+          "fr/CashFlow.Excpetion.resources.dll": {
+            "locale": "fr"
+          },
+          "pt-BR/CashFlow.Excpetion.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "pt-PT/CashFlow.Excpetion.resources.dll": {
+            "locale": "pt-PT"
+          }
         }
       }
     }

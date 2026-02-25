@@ -9,3 +9,15 @@ C:\Users\Marco\Projetos\dotNet\CashFlow\src\CashFlow.Excpetion\obj\Debug\net8.0\
 C:\Users\Marco\Projetos\dotNet\CashFlow\src\CashFlow.Excpetion\obj\Debug\net8.0\refint\CashFlow.Excpetion.dll
 C:\Users\Marco\Projetos\dotNet\CashFlow\src\CashFlow.Excpetion\obj\Debug\net8.0\CashFlow.Excpetion.pdb
 C:\Users\Marco\Projetos\dotNet\CashFlow\src\CashFlow.Excpetion\obj\Debug\net8.0\ref\CashFlow.Excpetion.dll
+C:\Users\Marco\Projetos\dotNet\CashFlow\src\CashFlow.Excpetion\obj\Debug\net8.0\CashFlow.Excpetion.sourcelink.json
+C:\Users\Marco\Projetos\dotNet\CashFlow\src\CashFlow.Excpetion\bin\Debug\net8.0\fr\CashFlow.Excpetion.resources.dll
+C:\Users\Marco\Projetos\dotNet\CashFlow\src\CashFlow.Excpetion\bin\Debug\net8.0\pt-BR\CashFlow.Excpetion.resources.dll
+C:\Users\Marco\Projetos\dotNet\CashFlow\src\CashFlow.Excpetion\bin\Debug\net8.0\pt-PT\CashFlow.Excpetion.resources.dll
+C:\Users\Marco\Projetos\dotNet\CashFlow\src\CashFlow.Excpetion\obj\Debug\net8.0\CashFlow.Excpetion.ResourceErrorMessages.resources
+C:\Users\Marco\Projetos\dotNet\CashFlow\src\CashFlow.Excpetion\obj\Debug\net8.0\CashFlow.Excpetion.ResourceErrorMessages.fr.resources
+C:\Users\Marco\Projetos\dotNet\CashFlow\src\CashFlow.Excpetion\obj\Debug\net8.0\CashFlow.Excpetion.ResourceErrorMessages.pt-BR.resources
+C:\Users\Marco\Projetos\dotNet\CashFlow\src\CashFlow.Excpetion\obj\Debug\net8.0\CashFlow.Excpetion.ResourceErrorMessages.pt-PT.resources
+C:\Users\Marco\Projetos\dotNet\CashFlow\src\CashFlow.Excpetion\obj\Debug\net8.0\CashFlow.Excpetion.csproj.GenerateResource.cache
+C:\Users\Marco\Projetos\dotNet\CashFlow\src\CashFlow.Excpetion\obj\Debug\net8.0\fr\CashFlow.Excpetion.resources.dll
+C:\Users\Marco\Projetos\dotNet\CashFlow\src\CashFlow.Excpetion\obj\Debug\net8.0\pt-BR\CashFlow.Excpetion.resources.dll
+C:\Users\Marco\Projetos\dotNet\CashFlow\src\CashFlow.Excpetion\obj\Debug\net8.0\pt-PT\CashFlow.Excpetion.resources.dll

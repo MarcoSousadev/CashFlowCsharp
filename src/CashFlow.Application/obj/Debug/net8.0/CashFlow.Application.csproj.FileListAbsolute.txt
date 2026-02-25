@@ -17,3 +17,7 @@ C:\Users\Marco\Projetos\dotNet\CashFlow\src\CashFlow.Application\bin\Debug\net8.
 C:\Users\Marco\Projetos\dotNet\CashFlow\src\CashFlow.Application\bin\Debug\net8.0\CashFlow.Excpetion.pdb
 C:\Users\Marco\Projetos\dotNet\CashFlow\src\CashFlow.Application\obj\Debug\net8.0\CashFlow.Application.csproj.AssemblyReference.cache
 C:\Users\Marco\Projetos\dotNet\CashFlow\src\CashFlow.Application\obj\Debug\net8.0\CashFlow.7372E909.Up2Date
+C:\Users\Marco\Projetos\dotNet\CashFlow\src\CashFlow.Application\obj\Debug\net8.0\CashFlow.Application.sourcelink.json
+C:\Users\Marco\Projetos\dotNet\CashFlow\src\CashFlow.Application\bin\Debug\net8.0\fr\CashFlow.Excpetion.resources.dll
+C:\Users\Marco\Projetos\dotNet\CashFlow\src\CashFlow.Application\bin\Debug\net8.0\pt-BR\CashFlow.Excpetion.resources.dll
+C:\Users\Marco\Projetos\dotNet\CashFlow\src\CashFlow.Application\bin\Debug\net8.0\pt-PT\CashFlow.Excpetion.resources.dll

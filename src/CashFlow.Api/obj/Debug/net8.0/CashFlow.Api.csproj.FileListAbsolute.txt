@@ -45,3 +45,7 @@ C:\Users\Marco\Projetos\dotNet\CashFlow\src\CashFlow.Api\obj\Debug\net8.0\CashFl
 C:\Users\Marco\Projetos\dotNet\CashFlow\src\CashFlow.Api\obj\Debug\net8.0\CashFlow.Api.genruntimeconfig.cache
 C:\Users\Marco\Projetos\dotNet\CashFlow\src\CashFlow.Api\obj\Debug\net8.0\ref\CashFlow.Api.dll
 C:\Users\Marco\Projetos\dotNet\CashFlow\src\CashFlow.Api\bin\Debug\net8.0\FluentValidation.dll
+C:\Users\Marco\Projetos\dotNet\CashFlow\src\CashFlow.Api\obj\Debug\net8.0\CashFlow.Api.sourcelink.json
+C:\Users\Marco\Projetos\dotNet\CashFlow\src\CashFlow.Api\bin\Debug\net8.0\fr\CashFlow.Excpetion.resources.dll
+C:\Users\Marco\Projetos\dotNet\CashFlow\src\CashFlow.Api\bin\Debug\net8.0\pt-BR\CashFlow.Excpetion.resources.dll
+C:\Users\Marco\Projetos\dotNet\CashFlow\src\CashFlow.Api\bin\Debug\net8.0\pt-PT\CashFlow.Excpetion.resources.dll
