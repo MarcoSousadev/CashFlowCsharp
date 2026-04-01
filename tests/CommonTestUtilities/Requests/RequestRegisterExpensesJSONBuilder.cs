@@ -8,14 +8,6 @@ namespace CommonTestUtilities.Requests
     {
         public static RequestRegisterExpensesJSON Build()
         {
-            //var faker = new Faker();
-
-            //var request = new RequestRegisterExpensesJSON
-            //{
-            //    Title = faker.Commerce.Product(),
-            //    Date = faker.Date.Past,
-                
-            //};
 
            return new Faker<RequestRegisterExpensesJSON>()
                 .RuleFor(r => r.Title, faker => faker.Commerce.ProductName())
@@ -26,3 +18,4 @@ namespace CommonTestUtilities.Requests
         }
     }
 }
+
