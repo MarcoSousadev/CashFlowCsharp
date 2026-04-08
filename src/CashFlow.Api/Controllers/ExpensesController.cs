@@ -1,5 +1,8 @@
-﻿using CashFlow.Application.UseCases.Expenses.Register;
+﻿using CashFlow.Application.UseCases.Expenses.ListExpenses;
+using CashFlow.Application.UseCases.Expenses.Register;
 using CashFlow.Communication.Requests;
+using CashFlow.Communication.Responses;
+using CashFlow.Domain.Entities;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CashFlow.Api.Controllers
@@ -10,13 +13,45 @@ namespace CashFlow.Api.Controllers
     public class ExpensesController : ControllerBase
     {
         [HttpPost]
-        public IActionResult Register(
+        [ProducesResponseType(typeof(ResponseRegisteredExpensesJSON), StatusCodes.Status201Created)]
+        [ProducesResponseType(typeof(ResponseErrorJson), StatusCodes.Status400BadRequest)]
+        public async Task<IActionResult> Register(
             [FromServices] IRegisterExpenseUseCase useCase,
             [FromBody] RequestRegisterExpensesJSON request)
         {
       
-            var response = useCase.Execute(request);
+            var response = await useCase.Execute(request);
             return Created(string.Empty, response);
         }
+
+        [HttpGet]
+        [ProducesResponseType(typeof(ResponseExpensesJson), StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status204NoContent)]
+        public async Task<IActionResult> GetAllExpenses([FromServices] IGetAllExpensesUseCase useCase)
+        {
+            var response = await useCase.Execute();
+            
+            if (response.Expenses.Count != 0)
+                return Ok(response);
+
+
+            return NoContent();
+        }
+
+        [HttpGet]
+        [Route("{id}")]
+        [ProducesResponseType(typeof(ResponseEntireExpenseJson), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(ResponseErrorJson), StatusCodes.Status404NotFound)]
+        public async Task<IActionResult> GetById([FromRoute]long id , [FromServices]IGetByIdUseCase useCase)
+        {
+            var response = await useCase.Execute(id);
+
+            if (response != null)
+                return Ok(response);
+
+            return NotFound();
+        }
     }
- }
+
+
+}

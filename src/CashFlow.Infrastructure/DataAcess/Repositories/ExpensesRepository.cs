@@ -1,5 +1,6 @@
 ﻿using CashFlow.Domain.Entities;
 using CashFlow.Domain.Repositories.Expenses;
+using Microsoft.EntityFrameworkCore;
 
 namespace CashFlow.Infrastructure.DataAcess.Repositories
 {
@@ -10,9 +11,19 @@ namespace CashFlow.Infrastructure.DataAcess.Repositories
         {
             _dbContext = dbContext;
         }
-        public void Add(Expense expense)
+        public async Task Add(Expense expense)
         {
-           _dbContext.Expenses.Add(expense);
-        }   
+           await _dbContext.Expenses.AddAsync(expense);
+        }
+
+        public async Task<List<Expense>> GetAll()
+        {
+            return await _dbContext.Expenses.AsNoTracking().ToListAsync();
+        }
+
+        public async Task<Expense?> GetById(long id)
+        {
+            return await _dbContext.Expenses.AsNoTracking().FirstOrDefaultAsync(expenses => expenses.Id == id);
+        }
     }
 }
