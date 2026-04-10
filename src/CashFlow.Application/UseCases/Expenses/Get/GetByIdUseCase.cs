@@ -1,18 +1,25 @@
 ﻿using CashFlow.Domain.Entities;
 using CashFlow.Domain.Repositories.Expenses;
+using CashFlow.Excpetion;
+using CashFlow.Excpetion.ExceptionsBase;
 
 namespace CashFlow.Application.UseCases.Expenses.ListExpenses
 {
     internal class GetByIdUseCase : IGetByIdUseCase
     {
-        private readonly IExpensesRepository _repository;
-        public GetByIdUseCase(IExpensesRepository repository)
+        private readonly IReadOnlyRepository _repository;
+        public GetByIdUseCase(IReadOnlyRepository repository)
         {
             _repository = repository;
         }
         public async Task<Expense> Execute(long id)
         {
             var result = await _repository.GetById(id); 
+
+            if(result == null)
+            {
+                throw new NotFoundException(ResourceErrorMessages.RESOURCE_NOT_FOUND);
+            }
 
             return new Expense
             {

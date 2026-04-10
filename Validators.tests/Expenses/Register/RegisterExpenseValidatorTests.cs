@@ -12,7 +12,7 @@ namespace Validators.tests.Expenses.Register
 
         public void Success()
         {
-            var validator = new RegisterExpenseValidator();
+            var validator = new ExpenseValidator();
 
             var request = RequestRegisterExpensesJSONBuilder.Build();
 
@@ -27,7 +27,7 @@ namespace Validators.tests.Expenses.Register
         [InlineData(null)]
         public void ErrorTitleEmpty(string title)
         {
-            var validator = new RegisterExpenseValidator();
+            var validator = new ExpenseValidator();
             var request = RequestRegisterExpensesJSONBuilder.Build();
             request.Title = title;
 
@@ -40,7 +40,7 @@ namespace Validators.tests.Expenses.Register
         [Fact]
         public void ErrorDateFuture()
         {
-            var validator = new RegisterExpenseValidator();
+            var validator = new ExpenseValidator();
             var request = RequestRegisterExpensesJSONBuilder.Build();
             request.Date = DateTime.UtcNow.AddDays(1);
 
@@ -53,7 +53,7 @@ namespace Validators.tests.Expenses.Register
         [Fact]
         public void ErrorPaymentInvalid()
         {
-            var validator = new RegisterExpenseValidator();
+            var validator = new ExpenseValidator();
             var request = RequestRegisterExpensesJSONBuilder.Build();
             request.PaymentType = (PaymentType)700;
 
@@ -69,7 +69,7 @@ namespace Validators.tests.Expenses.Register
         [InlineData(-2)]
         public void ErrorAmountInvalid(decimal amount)
         {
-            var validator = new RegisterExpenseValidator();
+            var validator = new ExpenseValidator();
             var request = RequestRegisterExpensesJSONBuilder.Build();
             request.Amount = amount;
 

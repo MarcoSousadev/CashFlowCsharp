@@ -126,6 +126,10 @@
   <data name="PAYMENT_TYPE_INVALID" xml:space="preserve">
     <value>Le mode de paiement n'est pas valide.</value>
   </data>
+  <data name="RESOURCE_NOT_FOUND" xml:space="preserve">
+    <value>Ressource introuvable
+</value>
+  </data>
   <data name="TITLE_REQUIRED" xml:space="preserve">
     <value>Le titre est obligatoire.</value>
   </data>

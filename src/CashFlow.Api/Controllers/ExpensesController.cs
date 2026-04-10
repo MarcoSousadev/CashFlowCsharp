@@ -1,4 +1,5 @@
-﻿using CashFlow.Application.UseCases.Expenses.ListExpenses;
+﻿using CashFlow.Application.UseCases.Expenses.Delete;
+using CashFlow.Application.UseCases.Expenses.ListExpenses;
 using CashFlow.Application.UseCases.Expenses.Register;
 using CashFlow.Communication.Requests;
 using CashFlow.Communication.Responses;
@@ -13,7 +14,7 @@ namespace CashFlow.Api.Controllers
     public class ExpensesController : ControllerBase
     {
         [HttpPost]
-        [ProducesResponseType(typeof(ResponseRegisteredExpensesJSON), StatusCodes.Status201Created)]
+        [ProducesResponseType(typeof(ResponseExpensesJSON), StatusCodes.Status201Created)]
         [ProducesResponseType(typeof(ResponseErrorJson), StatusCodes.Status400BadRequest)]
         public async Task<IActionResult> Register(
             [FromServices] IRegisterExpenseUseCase useCase,
@@ -48,6 +49,36 @@ namespace CashFlow.Api.Controllers
 
             if (response != null)
                 return Ok(response);
+
+            return NotFound();
+        }
+
+
+        [HttpDelete]
+        [Route("{id}")] 
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(ResponseErrorJson), StatusCodes.Status404NotFound)]
+        public async Task<IActionResult> Delete([FromRoute] long id, [FromServices] IDeleteExpenseUseCase useCase)
+        {
+            var result = await useCase.Execute(id);
+
+            if (result != false)
+                return Ok();
+
+            return NotFound();
+        }
+
+        [HttpPut]
+        [Route("{id}")]
+        [ProducesResponseType(StatusCodes.Status204NoContent)]
+        [ProducesResponseType(typeof(ResponseErrorJson), StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(typeof(ResponseErrorJson), StatusCodes.Status404NotFound)]
+        public async Task<IActionResult> Update([FromServices] IUpdateUseCase useCase , [FromRoute] long id, RequestExpenseJson request)
+        {
+            var result = await useCase.Execute(id, request);
+
+            if (result != false)
+                return Ok();
 
             return NotFound();
         }

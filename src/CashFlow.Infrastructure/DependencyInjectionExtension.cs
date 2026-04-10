@@ -19,7 +19,9 @@ namespace CashFlow.Infrastructure
 
         private static void AddRepositories(IServiceCollection services)
         {
-            services.AddScoped<IExpensesRepository, ExpensesRepository>();
+            services.AddScoped<IReadOnlyRepository, ExpensesRepository>();
+            services.AddScoped<IWriteOnlyRepository, ExpensesRepository>();
+            services.AddScoped<IDeleteOnlyRepository, ExpensesRepository>();
             services.AddScoped<IUnitOfWork, UnitOfWork>();
         }
 

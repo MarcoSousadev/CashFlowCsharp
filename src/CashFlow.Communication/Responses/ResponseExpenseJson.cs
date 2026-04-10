@@ -1,7 +1,7 @@
 ﻿using CashFlow.Communication.Enums;
 namespace CashFlow.Communication.Responses
 {
-    public class ResponseEntireExpenseJson
+    public class ResponseExpensesJSON
     {
         public long Id { get; set; }
         public string Title { get; set; }

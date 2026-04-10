@@ -88,6 +88,15 @@ namespace CashFlow.Excpetion {
         }
         
         /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Resource Not Found.
+        /// </summary>
+        public static string RESOURCE_NOT_FOUND {
+            get {
+                return ResourceManager.GetString("RESOURCE_NOT_FOUND", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Title is required.
         /// </summary>
         public static string TITLE_REQUIRED {
