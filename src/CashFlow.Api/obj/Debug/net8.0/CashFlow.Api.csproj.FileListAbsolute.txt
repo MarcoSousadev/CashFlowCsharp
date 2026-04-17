@@ -69,3 +69,12 @@ C:\Users\Marco\Projetos\dotNet\CashFlow\src\CashFlow.Api\bin\Debug\net8.0\Micros
 C:\Users\Marco\Projetos\dotNet\CashFlow\src\CashFlow.Api\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
 C:\Users\Marco\Projetos\dotNet\CashFlow\src\CashFlow.Api\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
 C:\Users\Marco\Projetos\dotNet\CashFlow\src\CashFlow.Api\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Marco\Projetos\dotNet\CashFlow\src\CashFlow.Api\bin\Debug\net8.0\ClosedXML.dll
+C:\Users\Marco\Projetos\dotNet\CashFlow\src\CashFlow.Api\bin\Debug\net8.0\ClosedXML.Parser.dll
+C:\Users\Marco\Projetos\dotNet\CashFlow\src\CashFlow.Api\bin\Debug\net8.0\DocumentFormat.OpenXml.dll
+C:\Users\Marco\Projetos\dotNet\CashFlow\src\CashFlow.Api\bin\Debug\net8.0\DocumentFormat.OpenXml.Framework.dll
+C:\Users\Marco\Projetos\dotNet\CashFlow\src\CashFlow.Api\bin\Debug\net8.0\ExcelNumberFormat.dll
+C:\Users\Marco\Projetos\dotNet\CashFlow\src\CashFlow.Api\bin\Debug\net8.0\RBush.dll
+C:\Users\Marco\Projetos\dotNet\CashFlow\src\CashFlow.Api\bin\Debug\net8.0\SixLabors.Fonts.dll
+C:\Users\Marco\Projetos\dotNet\CashFlow\src\CashFlow.Api\bin\Debug\net8.0\System.IO.Packaging.dll
+C:\Users\Marco\Projetos\dotNet\CashFlow\src\CashFlow.Api\bin\Debug\net8.0\pt-BR\CashFlow.Domain.resources.dll

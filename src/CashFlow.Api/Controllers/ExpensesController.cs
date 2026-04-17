@@ -1,6 +1,7 @@
 ﻿using CashFlow.Application.UseCases.Expenses.Delete;
 using CashFlow.Application.UseCases.Expenses.ListExpenses;
 using CashFlow.Application.UseCases.Expenses.Register;
+using CashFlow.Application.UseCases.Expenses.Update;
 using CashFlow.Communication.Requests;
 using CashFlow.Communication.Responses;
 using CashFlow.Domain.Entities;
@@ -18,7 +19,7 @@ namespace CashFlow.Api.Controllers
         [ProducesResponseType(typeof(ResponseErrorJson), StatusCodes.Status400BadRequest)]
         public async Task<IActionResult> Register(
             [FromServices] IRegisterExpenseUseCase useCase,
-            [FromBody] RequestRegisterExpensesJSON request)
+            [FromBody] RequestExpenseJson request)
         {
       
             var response = await useCase.Execute(request);
@@ -41,7 +42,7 @@ namespace CashFlow.Api.Controllers
 
         [HttpGet]
         [Route("{id}")]
-        [ProducesResponseType(typeof(ResponseEntireExpenseJson), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(ResponseExpensesJSON), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(ResponseErrorJson), StatusCodes.Status404NotFound)]
         public async Task<IActionResult> GetById([FromRoute]long id , [FromServices]IGetByIdUseCase useCase)
         {

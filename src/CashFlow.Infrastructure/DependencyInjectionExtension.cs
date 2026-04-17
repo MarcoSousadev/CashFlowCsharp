@@ -22,6 +22,7 @@ namespace CashFlow.Infrastructure
             services.AddScoped<IReadOnlyRepository, ExpensesRepository>();
             services.AddScoped<IWriteOnlyRepository, ExpensesRepository>();
             services.AddScoped<IDeleteOnlyRepository, ExpensesRepository>();
+            services.AddScoped<IUpdateOnlyRepository, ExpensesRepository>();
             services.AddScoped<IUnitOfWork, UnitOfWork>();
         }
 

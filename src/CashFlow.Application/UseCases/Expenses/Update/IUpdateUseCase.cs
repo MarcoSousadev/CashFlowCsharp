@@ -1,5 +1,6 @@
 ﻿using CashFlow.Communication.Requests;
 using CashFlow.Communication.Responses;
+using CashFlow.Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,7 +11,7 @@ namespace CashFlow.Application.UseCases.Expenses.Update
 {
     public interface IUpdateUseCase
     {
-        Task Execute(long id, RequestExpenseJson request);
+        Task<bool> Execute(long id, RequestExpenseJson request);
                
     }
 }

@@ -1,5 +1,6 @@
 ﻿using CashFlow.Application.AutoMapper;
 using CashFlow.Application.UseCases.Expenses.Delete;
+using CashFlow.Application.UseCases.Expenses.Excel;
 using CashFlow.Application.UseCases.Expenses.ListExpenses;
 using CashFlow.Application.UseCases.Expenses.Register;
 using CashFlow.Application.UseCases.Expenses.Update;
@@ -29,6 +30,7 @@ namespace CashFlow.Application
             services.AddScoped<IGetByIdUseCase, GetByIdUseCase>();
             services.AddScoped<IDeleteExpenseUseCase, DeleteExpenseUseCase>();
             services.AddScoped<IUpdateUseCase, UpdateUseCase>();
+            services.AddScoped<IGenerateExpensesReportExcelUseCase, GenereteExpenseReportExcelUseCase>();
         }
     }
 }

@@ -20,14 +20,16 @@ namespace CashFlow.Application.UseCases.Expenses.Update
             _unitOfWork = unitOfWork;
 
         }
-        public async Task Execute(long id, RequestExpenseJson request)
+        public async Task<bool> Execute(long id, RequestExpenseJson request)
         {
             Validate(request);
 
             var expense = await _repository.GetById(id);
             if (expense == null)
             {
+              return false;
               throw new NotFoundException(ResourceErrorMessages.RESOURCE_NOT_FOUND);
+               
             }
 
             expense.Title = request.Title;
@@ -39,6 +41,8 @@ namespace CashFlow.Application.UseCases.Expenses.Update
             _repository.Update(expense);
 
             await _unitOfWork.Commit();
+
+            return true;
         }
 
 

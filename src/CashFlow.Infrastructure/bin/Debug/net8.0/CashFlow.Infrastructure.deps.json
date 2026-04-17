@@ -189,6 +189,11 @@
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
+        },
+        "resources": {
+          "pt-BR/CashFlow.Domain.resources.dll": {
+            "locale": "pt-BR"
+          }
         }
       }
     }
